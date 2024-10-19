@@ -50,22 +50,6 @@ body {
 }
 
 
-.courses-hero {
-  background-color: #0073e6;
-  color: white;
-  padding: 50px 0;
-  text-align: center;
-}
-
-.courses-hero h2 {
-  font-size: 40px;
-  margin-bottom: 15px;
-}
-
-.courses-hero p {
-  font-size: 20px;
-}
-
 .course-list {
   padding: 60px 20px;
   background-color: white;
