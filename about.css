@@ -4,15 +4,11 @@
   box-sizing: border-box;
 }
 
-a{
-  list-style-type: none;
-  text-decoration: none;
-  color: white;
-}
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+  font-family: 'Arial', sans-serif;
   background-color: #f9f9f9;
+  line-height: 1.6;
+  color: #333;
 }
 
 .navbar {
@@ -24,7 +20,7 @@ body {
   color: white;
 }
 
-.logo h1 {
+.navbar .logo h1 {
   font-size: 24px;
 }
 
@@ -48,81 +44,106 @@ body {
   color: white;
   border: none;
   padding: 10px 15px;
-  margin-left: 10px;
   cursor: pointer;
   border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.auth-buttons button:hover {
+  background-color: #ff6600;
+}
+
+.hero {
+  background: url('https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=1600') no-repeat center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h2 {
+  font-size: 48px;
+}
+
+.explore-btn { 
+  background-color: orange;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.explore-btn:hover {
+  background-color: #ff6600;
 }
 
 .about-section {
   padding: 60px 20px;
   background-color: white;
   text-align: center;
-  flex-grow: 1;
 }
 
 .about-container {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-.about-container h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
+.about-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
 }
 
-.about-container p {
-  font-size: 18px;
-  margin-bottom: 40px;
-}
-
-.about-values h3 {
-  font-size: 28px;
-  margin-bottom: 10px;
-}
-
-.about-values p,
-.about-values ul {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-
-.about-values ul {
-  list-style: disc;
-  padding-left: 20px;
-}
-
-.about-image img {
-  width: 100%;
-  height: auto;
-  margin: 20px 0;
+.about-card {
+  flex: 1 1 280px; /* Allow cards to grow and shrink, with a minimum width of 280px */
+  max-width: 300px; /* Maximum width for the cards */
+  background: #f1f1f1;
+  padding: 20px;
   border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+}
+
+.about-card img {
+  width: 100%;
+  height: auto; /* Ensure image maintains its aspect ratio */
+  border-radius: 10px;
+  object-fit: cover; /* Ensures the image covers the space without distortion */
 }
 
 .team-section {
   padding: 60px 20px;
-  background-color: #f1f1f1;
+  background-color: #f9f9f9;
   text-align: center;
-}
-
-.team-container {
-  max-width: 800px;
-  margin: 0 auto;
 }
 
 .team-members {
   display: flex;
-  justify-content: space-around;
-}
-
-.team-member {
-  text-align: center;
-  width: 200px;
+  gap: 20px;
+  justify-content: center;
 }
 
 .team-member img {
-  width: 100%;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover img {
+  transform: scale(1.1);
 }
 
 .testimonials-section {
@@ -131,35 +152,47 @@ body {
   text-align: center;
 }
 
-.testimonials-container {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
 .testimonials {
   display: flex;
-  justify-content: space-between;
+  gap: 20px;
+  justify-content: center;
 }
 
 .testimonial {
-  width: 250px;
-  background-color: #f9f9f9;
+  flex: 1;
+  background-color: #f1f1f1;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
 }
 
-.testimonial h4 {
-  margin-top: 10px;
-  font-size: 16px;
+.testimonial:hover {
+  transform: translateY(-5px);
 }
 
 .footer {
   background-color: #333;
-  text-align: center;
   color: white;
-  padding: 20px 0;
-  position: relative;
-  bottom: 0;
-  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .about-cards {
+    justify-content: center; /* Center the cards on smaller screens */
+  }
+
+  .about-card {
+    flex: 1 1 100%; /* Cards should take full width on small screens */
+    max-width: 100%;
+  }
+
+  .team-members {
+    flex-direction: column;
+  }
+
+  .testimonials {
+    flex-direction: column;
+  }
 }

@@ -9,11 +9,13 @@ body {
   line-height: 1.6;
   background-color: #f9f9f9;
 }
-a{
+
+a {
   list-style-type: none;
   text-decoration: none;
   color: white;
 }
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -21,6 +23,7 @@ a{
   padding: 20px;
   background-color: #333;
   color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .logo h1 {
@@ -50,6 +53,33 @@ a{
   margin-left: 10px;
   cursor: pointer;
   border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.auth-buttons button:hover {
+  background-color: #ff6600;
+}
+
+.hero-section {
+  background: url('https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=800') no-repeat center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero-container h2 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero-container p {
+  font-size: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  animation: fadeIn 2.5s ease-in-out;
 }
 
 .contact-section {
@@ -61,6 +91,10 @@ a{
 .contact-container {
   max-width: 800px;
   margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #fff;
 }
 
 .contact-container h2 {
@@ -78,6 +112,11 @@ a{
   height: auto;
   margin-bottom: 30px;
   border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.contact-image img:hover {
+  transform: scale(1.05);
 }
 
 .contact-form input,
@@ -98,6 +137,11 @@ a{
   cursor: pointer;
   border-radius: 4px;
   font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #ff6600;
 }
 
 .social-media {
@@ -115,12 +159,16 @@ a{
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.social-media img:hover {
+  transform: scale(1.2);
 }
 
 .footer {
   background-color: #333;
   color: white;
   text-align: center;
-  padding: 20px 0;
-  margin-top: 40px;
+  padding: 20px;
 }
