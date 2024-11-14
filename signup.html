@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <h1>LearnHub</h1>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./courses.html">Courses</a></li>
+        <li><a href="./about.html">About Us</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="auth-buttons">
+      <button class="login-btn" onclick="location.href='login.html'">Login</button>
+      <button class="signup-btn">Sign Up</button>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="text">
+      <h1>Create Account</h1>
+      <input type="text" class="input" placeholder="Enter full name"><br>
+      <input type="email" class="input" placeholder="Enter email"><br>
+      <input type="password" class="input" placeholder="Enter password"><br>
+      <input type="password" class="input" placeholder="Confirm password">
+      <button class="signup-button">Sign Up</button>
+      <p class="login-link">Already have an account? <span onclick="location.href='login.html'">Login</span></p>
+    </div>
+  </div>
+</body>
+</html>

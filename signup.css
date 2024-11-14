@@ -95,18 +95,7 @@ body {
   box-shadow: 0 0 5px rgba(255, 153, 0, 0.3);
 }
 
-.forgot-password {
-  margin-top: 10px;
-  font-size: 14px;
-  color: #666;
-  cursor: pointer;
-}
-
-.forgot-password:hover {
-  color: #ff9900;
-}
-
-.login-button {
+.signup-button {
   width: 90%;
   height: 50px;
   background-color: #ff9900;
@@ -119,24 +108,24 @@ body {
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.login-button:hover {
+.signup-button:hover {
   background-color: #e68a00;
   transform: translateY(-2px);
 }
 
-.signup-link {
+.login-link {
   margin-top: 20px;
   font-size: 16px;
   color: #333;
 }
 
-.signup-link span {
+.login-link span {
   color: #ff3300;
   cursor: pointer;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
-.signup-link span:hover {
+.login-link span:hover {
   color: #e60000;
 }

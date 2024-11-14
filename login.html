@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>login</title>
+  <title>Login</title>
   <link rel="stylesheet" href="login.css">
 </head>
-
 <body>
   <header class="navbar">
     <div class="logo">
@@ -23,21 +21,19 @@
     </nav>
     <div class="auth-buttons">
       <button class="login-btn">Login</button>
-      <button class="signup-btn">Sign Up</button>
+      <button class="signup-btn"><a href="./signup.html">SignUp</a></button>
     </div>
   </header>
 
   <div class="container">
     <div class="text">
       <h1>Login</h1>
-      <input type="text" class="input1" placeholder="Enter username"> <br>
-      <input type="password" class="input2" placeholder="Enter password">
-      <p>Forgot password?</p>
-      <button>Login</button>
-      <p>not a member?<span>Sign up</span></p>
+      <input type="text" class="input" placeholder="Enter username"><br>
+      <input type="password" class="input" placeholder="Enter password">
+      <p class="forgot-password">Forgot password?</p>
+      <button class="login-button">Login</button>
+      <p class="signup-link">Not a member? <span><a href="./signup.html">SignUp</a></span></p>
     </div>
-
   </div>
 </body>
-
 </html>
