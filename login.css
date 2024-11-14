@@ -1,0 +1,122 @@
+*{
+  margin: 0%;
+  padding: 0%;
+}
+body{
+  background-image: url("./login_back.jpeg");
+  background-size: 100% 100%
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+.logo h1 {
+  font-size: 24px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: orange;
+}
+
+.auth-buttons button {
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.auth-buttons button:hover {
+  background-color: #ff8c00;
+}
+
+.container{
+  width: 500px; ;
+  height: 600px; 
+  text-align: center;
+  color:solid white;
+  background-color:rgb(244, 198, 198);
+  margin-left: 36%;
+  margin-top: 12%;
+  margin-bottom: 12%;
+  border-radius: 30px;
+}
+.container.text{
+  position: relative;
+  top: 7%;
+}
+.input1{
+  border: none;
+  background-color:  rgb(241, 232, 216);
+  border-radius: 3px solid white;
+  width: 250px;
+  font-size:22px ;
+  margin-top: 40px;
+  outline:none ;
+  color:solid white ;
+
+
+}
+.input2{
+  border: none;
+  background-color: rgb(241, 232, 216);
+  border-radius: 3px solid white;
+  width: 250px;
+  font-size:22px ;
+  margin-top: 40px;
+  outline:none ;
+  color: solid white ;
+
+
+}
+.text button{
+  width: 250px;
+  height:44px;
+  background-color: rgb(224, 120, 23);
+  color: black;
+  border: none;
+  font-size: 22px;
+  border-radius: 25px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+button:hover{
+  border:3px solid rgb(213, 112, 35);
+  font-size: 24 px;
+  background-color: black;
+  color: white;
+}
+p{
+  margin-top: 30px;
+  font-size:20px ;
+}
+p span{
+  color: rgb(237, 35, 12);
+  cursor: pointer;
+}

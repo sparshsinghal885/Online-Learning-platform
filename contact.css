@@ -9,7 +9,11 @@ body {
   line-height: 1.6;
   background-color: #f9f9f9;
 }
-
+a{
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
