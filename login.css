@@ -11,36 +11,21 @@ body {
 }
 
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 15px 30px;
-  background-color: #333;
-  color: white;
 }
 
-.logo h1 {
+.navbar h1 {
   font-size: 24px;
   font-weight: bold;
 }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-}
-
-.nav-links li {
-  margin: 0 15px;
-}
-
-.nav-links a {
+.navbar-nav .nav-link {
   color: white;
   text-decoration: none;
   font-size: 18px;
-  transition: color 0.3s ease;
 }
 
-.nav-links a:hover {
+.navbar-nav .nav-link:hover {
   color: #ff9900;
 }
 
@@ -61,36 +46,30 @@ body {
 }
 
 .container {
-  width: 400px;
-  text-align: center;
-  color: #333;
-  background-color: rgba(255, 255, 255, 0.9);
+  max-width: 400px;
   margin: 100px auto;
   padding: 40px;
+  background-color: rgba(255, 255, 255, 0.9);
   border-radius: 15px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.text h1 {
+.text-center h1 {
   font-size: 28px;
   color: #333;
-  margin-bottom: 20px;
 }
 
-.input {
+.form-control {
   border: 1px solid #ddd;
   background-color: #f9f9f9;
   border-radius: 8px;
-  width: 90%;
-  padding: 12px 15px;
   font-size: 18px;
-  margin-top: 20px;
-  outline: none;
+  padding: 12px 15px;
   color: #333;
   transition: border-color 0.3s ease;
 }
 
-.input:focus {
+.form-control:focus {
   border-color: #ff9900;
   box-shadow: 0 0 5px rgba(255, 153, 0, 0.3);
 }
@@ -99,29 +78,14 @@ body {
   margin-top: 10px;
   font-size: 14px;
   color: #666;
-  cursor: pointer;
 }
 
-.forgot-password:hover {
+.forgot-password a {
   color: #ff9900;
 }
 
-.login-button {
-  width: 90%;
-  height: 50px;
-  background-color: #ff9900;
-  color: white;
-  border: none;
-  font-size: 20px;
-  border-radius: 25px;
-  margin-top: 20px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.login-button:hover {
-  background-color: #e68a00;
-  transform: translateY(-2px);
+.forgot-password a:hover {
+  color: #e68a00;
 }
 
 .signup-link {
@@ -130,13 +94,13 @@ body {
   color: #333;
 }
 
-.signup-link span {
+.signup-link a {
   color: #ff3300;
   cursor: pointer;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
-.signup-link span:hover {
+.signup-link a:hover {
   color: #e60000;
 }

@@ -20,7 +20,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 10%;
+  padding: 20px 2%;
   background: linear-gradient(135deg, #4b6cb7, #182848);
   color: white;
 }

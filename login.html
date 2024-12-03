@@ -4,36 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="login.css">
 </head>
 <body>
-  <header class="navbar">
-    <div class="logo">
-      <h1>LearnHub</h1>
-    </div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./courses.html">Courses</a></li>
-        <li><a href="./about.html">About Us</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="auth-buttons">
-      <button class="login-btn">Login</button>
-      <button class="signup-btn"><a href="./signup.html">SignUp</a></button>
+  <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">LearnHub</a>
+      <nav class="navbar-nav ms-auto w-100 d-flex justify-content-center">
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link text-white" href="./index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="./courses.html">Courses</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="./about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="./contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="./profile.html">Profile</a></li>
+        </ul>
+      </nav>
+      <div class="auth-buttons d-flex">
+        <button class="btn btn-warning me-2" onclick="location.href='login.html'">Login</button>
+        <button class="btn btn-warning">SignUp</button>
+      </div>
     </div>
   </header>
+  
 
-  <div class="container">
-    <div class="text">
-      <h1>Login</h1>
-      <input type="text" class="input" placeholder="Enter username"><br>
-      <input type="password" class="input" placeholder="Enter password">
-      <p class="forgot-password">Forgot password?</p>
-      <button class="login-button">Login</button>
-      <p class="signup-link">Not a member? <span><a href="./signup.html">SignUp</a></span></p>
+  <div class="container mt-5">
+    <div class="text-center">
+      <h1 class="mb-4">Login</h1>
+      <input type="text" class="form-control mb-3" placeholder="Enter username">
+      <input type="password" class="form-control mb-3" placeholder="Enter password">
+      <p class="forgot-password"><a href="#">Forgot password?</a></p>
+      <button class="btn btn-warning btn-lg w-100 mt-3">Login</button>
+      <p class="signup-link mt-3">Not a member? <a href="./signup.html" class="text-danger font-weight-bold">SignUp</a></p>
     </div>
   </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
